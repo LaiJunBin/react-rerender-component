@@ -1,18 +1,20 @@
-# React Force Update
+# React Rerender Component
 
-監聽狀態重新渲染子組件
+English｜[繁體中文](https://github.com/LaiJunBin/react-rerender-component/blob/main/README-zh-tw.md#react-rerender-component)
 
-# 安裝
+Listen to state to rerender children components.
+
+# Install
 ```
 $ npm i react-rerender-component
 ```
 
-# 引入
+# Import
 ```js
 import Rerender from 'react-rerender-component'
 ```
 
-# 範例
+# Example
 ```jsx
 function ReactiveCount ({ count }) {
   return <div>{count}</div>
@@ -24,7 +26,7 @@ function UnreactiveCount ({ count: initCount }) {
 }
 ```
 
-在一般情況下，若傳入外部的資料(State)給 `ReactiveCount` 應該會及時更新，但在 `UnreactiveCount` 已經多過一層狀態，即使外部狀態更新也不會重新渲染。
+In general, when the external state is passed to the `ReactiveCount`, it will be updated in time, but in `UnreactiveCount` exists a new state from the parent state, it can't rerender even if the external state is updated.
 
 ```jsx
 function App () {
@@ -42,7 +44,7 @@ function App () {
 }
 ```
 
-`Rerender` 組件可用的屬性：
-屬性           | 描述  |
+`Rerender` component available properties:
+property           | description  |
 --------------|:-----:|
-listener    | 一個陣列，當狀態有改變就會重新渲染子組件 |
+listener    | An array, when the state changes will rerender children component. |
