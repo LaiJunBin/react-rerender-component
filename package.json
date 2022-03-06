@@ -1,8 +1,16 @@
 {
   "name": "react-rerender-component",
-  "version": "0.1.0",
-  "description": "",
-  "keywords": ["react", "update", "forceupdate", "render", "rerender", "watch", "state"],
+  "version": "0.1.1",
+  "description": "Listen to state to rerender children components.",
+  "keywords": [
+    "react",
+    "update",
+    "forceupdate",
+    "render",
+    "rerender",
+    "watch",
+    "state"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/laijunbin/react-rerender-component.git"
